@@ -792,6 +792,18 @@ h3{
 
 }
 
+
+.mobile{
+    width:30%;
+  }
+
+@media(min-width:900px){
+
+  .mobile{
+    visibility: hidden;
+    width:0.1%;
+  }
+}
     </style>
   </head>
   <body>
@@ -817,7 +829,13 @@ h3{
       </a>
 </div> 
 
+<div style="text-align:center" id="mobile">
+<a href="index.html">
+
   
+  <img src="./logo.png" class="mobile" />
+  </a>
+</div>
      
  
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
