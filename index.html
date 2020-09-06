@@ -821,7 +821,7 @@ form {
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 
 	 table {
         border-collapse: separate;
@@ -910,7 +910,7 @@ input[type="text"] {
 
 
 
-@media(max-width:800px){
+@media(max-width:900px){
 
 
 	input[type="text"] {
@@ -1197,19 +1197,37 @@ form{
 </div>
 </div>
 </div>
-<div class="contact">
+<div class="contact" style="margin-top:1rem">
 
-<form action="search.php" method="post" name ="send" id="contact">
+<form  method="post" name="google-sheet" id="contact">
 
-<h2 style="color:#000000">Contact Form</h2>
-<br>
+ <h1  style="color:#000000">Contact Us</h1>
   <input type="text" id="FirstName" name="FirstName" placeholder="First Name*" required>
-  <input type="text" id="LastName" name="LastName" placeholder="Last Name*" required>
+  <input type="text" id="LastName" name="LastName" placeholder="Last Name" required>
   <input type="email" id="Email" name="Email" placeholder="Email*" required>
   <input type="text" id="Note" name="Note" placeholder="Note">
-  <button type="submit" class=" submits " value="Submit"> Submit</button>
+  <button type="submit" class=" submits "  name ="submit" value="Submit"> Submit</button>
 
             </form>
+
+
+            
+     <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwAdl-BoeRPuQEUQJy_YfzCc2DRD6YLA4RCKgpTXuMINsy56Qo/exec'
+      const form = document.forms['google-sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response =>
+
+alert("Thank you for contacting us.We will reach out to you soon!")
+
+
+          )
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
 
           </div>
 
