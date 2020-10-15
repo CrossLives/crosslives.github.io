@@ -1,0 +1,120 @@
+
+
+.option {
+  width: 95%;
+  height: 25rem;
+border-radius: 5px;
+  text-align: center;
+
+  background-image: linear-gradient( #ffffff 10%, rgb(224, 224, 224)100%);
+padding:0.5rem;
+  border-width: 0.08rem;
+  box-shadow: 2px 2px 4px rgb(113, 175, 233);
+  height:400px;
+  margin-left: 0.3rem;
+  margin-bottom: 2rem;
+
+
+}
+
+
+@media(max-width:600px){
+    .option{
+      margin:1rem ;
+      width: 92%;
+      margin-bottom: 2rem;
+      height: 400px;
+    }
+}
+.center {
+  text-align: center;
+  padding: 1rem;
+}
+
+.header {
+  padding: 1.5rem;
+  height: 7%;
+  width: 80%;
+  text-align: center;
+ color:rgb(88, 87, 87);
+ text-shadow: 2px 2px 4px#8dd2fa;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+
+  background-image: linear-gradient( 	#93dbd4 10%,#e5f7f5 55%,  	#93dbd4 100%);
+  
+  margin:1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgb(97, 95, 95);
+}
+
+
+@media(min-width:900px){
+  .header {
+      padding: 1.5rem;
+      height: 7%;
+      width: 85%;
+   
+    
+    }
+}
+.para {
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+  margin-left:1rem;
+  margin-right:1rem;
+}
+.sevicegrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 1rem;
+  margin-left: 20%;
+}
+@media (min-width: 900px) {
+  .servicegrid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+
+
+.details{
+
+
+width: 11rem;
+color: black;
+background-image: linear-gradient( 	#93dbd4 10%, 	#c7faf5 100%);
+border: none;
+border-radius: 5px;
+font-size: 1.5rem;
+height:3rem;
+box-shadow: 2px 2px 4px #808080;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+
+.details:hover{
+color: white;
+background-image: linear-gradient( #0502a5 10%, rgb(216, 204, 247)100%);
+}
+
+
+.box{
+ height:170px;
+ width:87%;
+ background-color: white;
+ padding:1rem;
+ border-radius: 5px;
+ margin-left: 1rem;
+ box-shadow: 2px 2px 4px rgb(145, 145, 145);
+}
